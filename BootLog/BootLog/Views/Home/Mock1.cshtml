@@ -1,0 +1,44 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mock1</title>
+    <link href="/Content/mock1.css" rel="stylesheet"/>
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/Mock1/Mock1.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body id="wp_body">
+<div id="wp_menu_button" class="hexagon">
+    <p>test</p>
+</div>
+<div class="whitepage">
+    <div id="wp_container" class="col-lg-12">
+        <div class="col-lg-4 wp_column">
+                <p>@ViewBag.lorem</p>
+            </div>
+            <div class="col-lg-4 wp_column">
+                <p>@ViewBag.lorem</p>
+            </div>
+        <div class="col-lg-4 wp_column">
+            <div id="wp_menu_button_placeholder" class="hexagon">
+                <p>should be invisible</p>
+            </div>
+            <p>@ViewBag.lorem</p>
+        </div>
+        <div class="col-lg-4 pull-right" id="wp_pages">
+            <p>1 - 2 - 3 - 4 - 5</p>
+        </div>
+        </div>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

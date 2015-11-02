@@ -1,0 +1,53 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mock2</title>
+    <link href="/Content/mock2.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/Mock1/Mock2.js"></script>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body id="WhitePage">
+<div id="wp_list"><div class="c_small" id="wp_posts_button"><p>P</p></div></div>
+<div id="wp_menu_button" class="wp_menu circle">
+    <p>M</p>
+    <ul>
+        <li><a class="menu_option" href="#">Option 1</a></li>
+        <li><a class="menu_option" href="#">Option 2</a></li>
+        <li><a class="menu_option" href="#">Option 3</a></li>
+        <li><a class="menu_option" href="#">Option 4</a></li>
+        <li><a class="menu_option" href="#">Option 5</a></li>
+    </ul>
+
+    <div id="page_flip_r" class="page_flip">
+        <a href="#">&lt;&nbsp;&nbsp;Next</a>
+    </div>
+</div>
+<div id="page_flip_l" class="page_flip">
+    <a href="#">Previous&nbsp;&nbsp;&gt;</a>
+</div>
+@*<div id="page_flip_r" class="page_flip"><a href="#">&lt;&nbsp;&nbsp;Next</a>
+        </div>*@
+<div class="col-lg-6 col-lg-offset-3 wp_content">
+    <h1 class="wp_header">HEADER</h1>
+    <h4 class="wp_catch">Catchphrase</h4>
+    <p>@ViewBag.lorem</p>
+    <p>@ViewBag.lorem</p>
+    <p>@ViewBag.lorem</p>
+    <p>@ViewBag.lorem</p>
+    <p>@ViewBag.lorem</p>
+    <p>@ViewBag.lorem</p>
+    <p>@ViewBag.lorem</p>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

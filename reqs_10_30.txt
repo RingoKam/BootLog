@@ -1,0 +1,43 @@
+
+Requirements rewritten:
+
+Technical requirements:
+---
+- Needs to be on Git
+- Needs UI/BLL/DAL
+- Use web API (no excessive page refreshing)
+- The project needs roles/logins to handle user-rights. These will be split in: users, authors, admin(s)
+- Include TinyMCE in the post editor page.
+- Make a login feature
+- Control panel feature (only accessible to admins)
+
+User requirements:
+---
+- View blog posts
+- Allow users to make comments
+- Allow authors to submit posts (but not post them directly)
+- Allow authors to tag posts
+- Allow admins to view a list of submitted posts with their status
+- Allow admins to authorize or deny posts that are not on the blog yet
+- Allow authors to add tags to posts
+- Allow admins to edit tags
+- Allow admins to add static pages from the CP
+- Allow admins to change an User to Author or Admin
+- Allow admins to remove Author/Admin privileges.
+- Allow admins to edit posts (before and after submission)
+- Allow admins to delete posts (before and after submission)
+- Allow admins to delete comments
+
+Control Panel Features:
+- Set blog name (affects the whole site)
+
+
+Extras:
+---
+- Allow admins to schedule posts and make them expire
+- RSS feed and Social buttons
+- Author’s page feature (accessible to each author)
+- Allow authors and admins to leave private notes (admins and authors only) on posts, e.g. a special flag on comments
+- Authors should be able to view their posts, see the status of their submissions
+- Authors should be able to submit edit which need to be approved by admins
+- Extra CP features: Set background, blog style (css); set blog header image
